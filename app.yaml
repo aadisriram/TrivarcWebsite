@@ -8,12 +8,26 @@ handlers:
     static_files: \1
     upload: (.*\.(gif|png|jpg|ico|js|css|swf|xml))
 
-  - url: /(.*\.html)
+	
+  - url: /addquestion
+    static_files: \1
+    upload: addQuestions.html
+	
+  - url: /main
     static_files: \1
     upload: index.html
     
   - url: /webcontent
     static_dir: webcontent
-
+	
+  - url: /js
+	static_dir: webcontent/js/
+	
+  - url: /css
+	static_dir: webcontent/css/
+	
+  - url: /images
+	static_dir: webcontent/images/
+	
   - url: /.*
     script: helloworld.py

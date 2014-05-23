@@ -1,9 +1,147 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Test webpage</title>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>index</title>
+		<meta name="description" content="">
+		<meta name="author" content="Kiran">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="css/timeTo.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		
 	</head>
-	
+
 	<body>
-		<h1>Hello World again!</h1>
+		<div class="main-page row-fluid">
+			<div class="page-header row-fluid">
+				<div class="filler span1">
+					
+				</div>
+				<div class="header-container span10">
+					<div class="logo span2">
+						playOn 
+					</div>
+					<div class="filler span7">
+						
+					</div>
+					<div class="right-menu span3">
+						<div class=" row-fluid">
+							<ul class="clearfix span12">
+								<li class="whatisthis ">What?</li>
+								<li class="signup ">Kick In</li>
+								<li class="signout">Kick Out</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-body row-fluid">
+				<div class="timer row-fluid">
+					 <div class="next-q-msg span12"><span>Next question in</span></div>
+				     <div id="countdowntimer" class="countdowntimer row-fluid clearfix">
+				     	
+				     </div>
+				</div>
+				 
+                <div id="status">
+                	
+                </div>
+				<div class="contest-name span12">
+					<span>
+					Nike Wolrd cup'14 Quiz
+					</span>
+				</div>
+				<div class="question-field row-fluid">
+					<div class="filler span2">
+						
+					</div>
+					<div class="question-box span8 clearfix">
+						<div class="question span12"><span>
+							What was the final score in world cup 2010 final math??
+						</span> </div>
+						<div class="options-box span12 clearfix">
+							<div class="optionsAC span6 options">
+								<div class="optionA"><input type="radio" name="option" class="option" value="a"/><span>A. </span> <span class="opta">3 - 1 </span></div>
+								<div class="optionC"><input type="radio" name="option" class="option" value="c"/><span>C. </span> <span class="optc">2 - 1 </span> </div>
+							</div>
+							<div class="optionsBD span6 options">
+								<div class="optionB"><input type="radio" name="option" class="option" value="b"/><span>B. </span> <span class="optb">6 - 5 </span></div>
+								<div class="optionD"><input type="radio" name="option" class="option" value="d"/><span>D. </span> <span class="optd">4 - 3 </span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="daily-fact question-field clearfix">
+					<div class="filler span2">
+						
+					</div>
+					<div class="fact-field span8">
+						<span class="didyouknow">Did you know?:</span>
+						<span class="the-fact"><i> <b>  Diego Armando Maradona</b>, The Argentinian Football Legend had a dream of pursuing his career as an Industrial Engineer. </i></span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="login-page">
+			<div class="login-heading row-fluid clearfix">
+				<span>Please enter the Stadium through the following Gates</span>				
+			</div>
+			<div class="login-options row-fluid clearfix">
+				<div class="span6 fbloginoptions login-btns clearfix">
+					
+					<div class="fbbtnholder">
+						<span class="gate1">Gate #1: </span><fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+					</div>
+                </div>
+                <div class="span6 gplusloginbtn clearfix login-btns">
+                <span class="gate2">Gate #2: </span>
+                <span id="signinButton">
+                	
+                    <span class="g-signin" data-callback="signinCallback" data-clientid="42626620057-9h7nhd2c17r6l4deb60d5109k5t9g145.apps.googleusercontent.com"
+					    data-cookiepolicy="single_host_origin"
+					    data-requestvisibleactions="http://schemas.google.com/AddActivity"
+					    data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read">
+					</span>
+				</span>
+                </div>
+			</div>
+		</div>
+		<div class="whatsitpage">
+			<p>Brief Intro</p>
+			PlayOn is an online quiz where football fanatics can test their knowledge in football. Participants get a chance to win exciting prizes every day. To participate in the quiz, login with your Facebook or Gmail account. To login click here.
+			<p> How it works</p>
+			A new question appears every hour of the day. This new question will be displayed once the user logs in to the website. A timer records the time taken by each user to answer the question. Participant answering most questions correctly for each day in minimum time is declared Winner for the Day and wins exciting prizes. Participants are given a window of 10 minutes to login and answer the question for the hour.
+			<p>Grand Finale</p>
+			The various Winners for the Day get a chance to participate in a Grand Finale. The winner of this finale event wins a Bumper prize and is declared Winner of the Tournament.
+		</div>
+		<div class="bg-mask">
+			
+		</div>
+		<script type="text/javascript" src="js/scripts/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/fblogin.js"></script>
+		<script type="text/javascript" src="js/gpluslogin.js"></script>
+		<script type="text/javascript" src="js/scripts/jquery.timeTo.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>
 	</body>
+	
 </html>

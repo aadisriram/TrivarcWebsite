@@ -1,0 +1,200 @@
+@media (max-width: 800px){
+	body{
+		font-size: 80%!important;
+		
+	}
+	.logo{
+		text-align: center;
+	}
+
+	
+}
+
+
+
+body {
+font-family: ubuntu;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+* html .clearfix {
+	height: 1%;
+}
+.filler{
+	min-height:  1px!important;
+	height: 2px!important;
+}
+.logo{
+	letter-spacing: 1px;
+	font-size: 200%;
+	color: #333333;
+	line-height: 2;
+	
+	
+}
+.page-header{
+	margin: 0!important;
+	padding: 0!important;
+}
+.header-container{
+	 	margin-left: 1%!important;
+}
+.right-menu ul{
+	float: right;
+	margin: 0!important;
+	margin-top: 16px!important;
+}
+.right-menu ul li{
+	list-style: none;
+	width: 50%;
+	float:left;
+	line-height: 2;
+	letter-spacing: 1px;
+	margin-left: 0!important;
+	text-align: center;
+	cursor: pointer;
+	
+	
+}
+.contest-name{
+	font-size: 150%;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 15px 2%;
+	margin-left: 0!important;
+}
+.contest-name span{
+	padding: 4px 10px;
+	background-color: #2BBB25;
+}
+.question-field{
+	float: left;
+	width: 96%;
+	padding:15px 2%;
+	
+}
+
+.question-box{
+	padding: 20px;
+	border: 1px solid #cfcfcf;
+	
+}
+.question{
+	letter-spacing: 1px;
+	font-size: 120%;
+	color: brown;
+	padding: 0 12px 12px 12px;
+	
+}
+.options{
+	width: 50%;
+	float: left;
+}
+.options input{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.options span{
+	display: inline-block;
+	font-size: 120%;
+	color: #666;
+}
+.options > div{
+	height: 30px;
+}
+.timer{
+	float: left;
+	text-align: center;
+}
+.next-q-msg{
+	text-align: center;
+	font-size: 110%;
+	line-height: 2;
+}
+.login-page{
+	width: 80%;
+	position: absolute;
+	top: 1%;
+	left: 10%;
+	background-color: #fdfdfd;
+	border: 2px solid;
+	box-shadow: 3px 3px 10px #ccc;
+	padding: 2%;
+	z-index: 2;
+	display: none;
+	border-radius: 5px;
+}
+.bg-mask{
+	width: 100%;
+height: 100%;
+opacity: 0.5;
+z-index: 1;
+background-color: #aaa;
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+}
+.login-heading{
+	font-size: 150%;
+	
+	padding: 1% 2% 4%;
+	float: left;
+	text-transform: capitalize;
+	text-align: center;
+}
+.signout{
+	display: none;
+}
+
+.fact-field{
+	padding: 2%;
+	line-height: 1.2;
+	font-size: 120%;
+	background-color: #fafafa;
+	color: #45484D;
+}
+.fact-field .the-fact{
+	color: #333333;
+    
+}
+.whatsitpage p{
+	text-align: left;
+	font-size: 150%;
+	font-weight: bold;
+	
+}
+.whatsitpage {
+	width: 80%;
+	position: absolute;
+	top: 1%;
+	left: 10%;
+	background-color: #fdfdfd;
+	border: 2px solid;
+	box-shadow: 3px 3px 10px #ccc;
+	padding: 2%;
+	z-index: 2;
+	display: none;
+	border-radius: 5px;
+}
+.fbbtnholder{
+	float: right;
+	position: relative;
+	top: 7px;
+}
+.gate1{
+	position: relative;
+	top: -2px;
+	
+}
+.gate2{
+	position: relative;
+	top: -12px;
+}
