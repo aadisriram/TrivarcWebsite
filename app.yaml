@@ -11,6 +11,9 @@ handlers:
   - url: /(.*\.html)
     static_files: \1
     upload: index.html
+    
+  - url: /webcontent
+    static_dir: webcontent
 
   - url: /.*
     script: helloworld.py
