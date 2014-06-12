@@ -34,7 +34,13 @@ $(document).ready(function(){
 	});
 	ga('set', 'page', '/trivarc');
      
-     
+     $(".scrollablebox").niceScroll({
+     	cursorcolor : "#f1fe00",
+		cursorwidth : 10,
+		cursorborder : "none",
+		autohidemode : false,
+		cursoropacitymin: 0.5
+     });
 	 getNewQuestion();
 	// setTimeout(function(){
 	    // logout();
@@ -73,6 +79,22 @@ $(document).ready(function(){
 		
 	});
 	
+	$(".fixtures").click(function(e){
+		e.stopPropagation();
+		
+		if($(".fixturespage").css("display") == "block"){
+			$(".fixturespage").slideUp(200,function(){
+				$(".scrollablebox").getNiceScroll().resize();
+			});
+		}else{
+			$(".fixturespage").slideDown(300,function(){
+				$(".scrollablebox").getNiceScroll().resize();
+			});
+		}
+		
+	});
+	
+	
 	$(".signup").click(function(e){
 		onPageLoadLogin = false;
 		e.stopPropagation();
@@ -110,7 +132,7 @@ $(document).ready(function(){
     	answered = true;
     	opt = $(this).val();
         qid = $(".question").attr("name");
-        ga('trivarc_com.send', 'event',"Attempted",userID,qid+" with answer " + opt);
+        ga('trivarc_com.send', 'event',"Attempted",userName,qid+" with answer " + opt);
     	if(loginStatus){
     		showConfirmMsg();
     	}else{
@@ -157,18 +179,18 @@ $(document).ready(function(){
     
 });
 
-function startIntervalCounting(){
-	intervals = setInterval(function(){
-		
-		var ctime = new Date();
-		ctime= (60 - parseInt(ctime.getMinutes())) * 60;
-		console.log(ctime);
-	   if(ctime <= 60){
-	   	  clearInterval(intervals);
-          hideGame();
-	   }
-	},60000);
-}
+// function startIntervalCounting(){
+	// intervals = setInterval(function(){
+// 		
+		// var ctime = new Date();
+		// ctime= (60 - parseInt(ctime.getMinutes())) * 60;
+		// console.log(ctime);
+	   // if(ctime <= 60){
+	   	  // clearInterval(intervals);
+          // // hideGame();
+	   // }
+	// },60000);
+// }
 
 
 
@@ -180,20 +202,23 @@ function showQuestion(){
 	$(".timer").hide();
 	$(".fact-field").hide();
 	$(".question-box").show();	
+	$(".scrollablebox").getNiceScroll().resize();
 }
 function hideQuestion(){
 	$(".timer").show();
 	$(".fact-field").show();
+	$(".previousquestion-field").show();
 	$(".question-box").hide();
-	showGame();
+	$(".scrollablebox").getNiceScroll().resize();
+	// showGame();
 }
 
 function showTimeupMsg(){
-    $(".fact-field").hide();
+    $(".previousquestion-field").hide();
     $(".question-box").hide();
 	$(".timer").hide();
 	$(".notime-field").show();
-	showGame();
+	// showGame();
 }
 
 function hideTimeupMsg(){
@@ -275,7 +300,7 @@ function loginSuccessFul(){
 	$(".signup").hide();
 	$(".signout").show();
 	hideLoginPage();
-	ga('trivarc_com.send', 'event',"User_loggedIn",userID,curdate.getTime());
+	ga('trivarc_com.send', 'event',"User_loggedIn",userName,curdate.getTime());
 	if(curdate.getHours() >= 6 && curdate.getHours() < 23){
 	   
 	}else{
@@ -292,7 +317,7 @@ function loginSuccessFul(){
 function logoutSuccessFully(){
 	var curdate = new Date();
 	
-	ga('trivarc_com.send', 'event',"User_loggedOut",curdate.getTime(),userID);
+	ga('trivarc_com.send', 'event',"User_loggedOut",userName,curdate.getTime());
 	FBLoggedin = false;
 	GplusLoggedin = false;
 	userID = "";
@@ -322,7 +347,7 @@ function getNewQuestion(){
 	var curdate = new Date();
 	
 	// alert(curdate.getHours());
-	if(curdate.getHours() >= 6 && curdate.getHours() < 23){
+	if(curdate.getHours() >= 9 && curdate.getHours() < 23){
 	
 	curdate = curdate.getTime();
 	
@@ -340,8 +365,9 @@ function getNewQuestion(){
 				ga('trivarc_com.send', 'event',"Question_arrived",curdate,res.questionId);
 				starttime = new Date().getTime();
 				showQuestion();
+				
 			}else{
-				$(".prevquestion-field").hide();
+				$(".previousquestion-field").hide();
 				
 				hideQuestion();
 				
@@ -357,35 +383,7 @@ function getNewQuestion(){
 }
 
 
-// 
-// function displayThankYouMsg(){
-// 	
-	// $(".thankyoumsg").fadeIn(300);
-	// $(".bg-mask").fadeIn(300);
-	// $(".question-box").hide();
-	// $(".fact-field").fadeIn(100);
-	// $(".timer").show();
-	// setTimeout(function(){
-		// $(".thankyoumsg").hide();
-		// $(".bg-mask").hide();
-	// },20000);
-// }
 
-
-// function timedOut(){
-	// var curdate = new Date();
-	// if(curdate.getHours() >= 9 && curdate.getHours() < 23){
-		// $(".timer").show();
-	// $(".notime-field").hide();
-	// $(".answeredmsg").fadeIn(300);
-	// $(".bg-mask").fadeIn(300);
-	// $(".fact-field").fadeIn(300);
-	// $(".question-box").hide();
-	// }else{
-		// $(".timer").hide();
-		// $(".notime-field").show();
-	// }
-// }
 
 function updateQuestionArea(res){
 	var qID = res.questionId;
@@ -412,7 +410,7 @@ function updateQuestionArea(res){
 	});
     
 	$(".question-box").fadeIn(300);
-	$(".fact-field .the-fact i").html(fact);
+	$(".fact-field .the-fact").html(fact);
 	$(".fact-field").hide();
 	$(".question").attr("name",qID);
 	$(".question span").html(newQ);
@@ -421,11 +419,11 @@ function updateQuestionArea(res){
 	$(".optc").html(opC);
 	$(".optd").html(opD);
 	if(prevQue != undefined || prevQue != null){
-		$(".prevquestion-field").show();
+		$(".previousquestion-field").show();
 		$(".prevquestion span").html(prevQue);
 		$(".prevquestionanswer span").html(prevans);
 	}else{
-		$(".prevquestion-field").hide();
+		$(".previousquestion-field").hide();
 	}
 	
 }
@@ -452,8 +450,13 @@ function checkIfUserInDB(userid){
 				
     	    }else if(onPageLoadLogin){
 			    gapi.auth.signOut();
+			    if(FBLoggedin){
+			    	
+			    }
+			    $('.whatisthis').trigger("click");
             }
 			else{
+				
     	    	checkIfQuestionIsAnswered();
     		}
 			
@@ -507,7 +510,7 @@ function sendAnswerToServer(){
 				ga('trivarc_com.send', 'event',"Answered_successfully",userID,qid+" with answer " + opt);
 				showThankyouMsg();
 				hideQuestion();
-				startIntervalCounting();
+				// startIntervalCounting();
 			}
 		}
 	});

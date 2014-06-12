@@ -1,20 +1,21 @@
-from google.appengine.ext import webapp
-from google.appengine.ext.webapp.util import run_wsgi_app
+# from google.appengine.ext import webapp
+import webapp2
+# from google.appengine.ext.webapp.util import run_wsgi_app
 
-class IndexHandler(webapp.RequestHandler):
+class IndexHandler(webapp2.RequestHandler):
     def get(self):
-        if self.request.url.endswith('/'):
-            path = '%index.html'%self.request.url
+        
 
-        self.redirect(path)
+        self.redirect("/football-world-cup-2014")
 
     def post(self):
         self.get()
 
-application = webapp.WSGIApplication([('/.*', IndexHandler)], debug=True)
+application = webapp2.WSGIApplication([
+  ('/.*', IndexHandler)
 
-def main():
-    run_wsgi_app(application)
 
-if __name__ == "__main__":
-    main()
+
+
+], debug=False)
+

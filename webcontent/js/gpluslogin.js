@@ -3,19 +3,19 @@
  */
 
 function signinCallback(authResult) {
+  //console.log(authResult);
   if (authResult['status']['signed_in']) {
     // Update the app to reflect a signed in user
     // Hide the sign-in button now that the user is authorized, for example:
-    if(onPageLoadLogin){
-	    console.log(authResult);
+    // if(onPageLoadLogin){
+	    // console.log(authResult);
 	    gapi.client.load('plus','v1', loadProfile);
-    
-    	GplusLoggedin = true;
-   		loginSuccessFul();
-   		console.log('Sign-in state: ' + authResult['error']);
-    }else{
-    	gapi.auth.signOut();
-    }
+        
+   		// 
+   		//console.log('Sign-in state: ' + authResult['error']);
+    // }else{
+    	// gapi.auth.signOut();
+    // }
     
   } else {
     // Update the app to reflect a signed out user
@@ -23,6 +23,7 @@ function signinCallback(authResult) {
     //   "user_signed_out" - User is signed-out
     //   "access_denied" - User denied access to your app
     //   "immediate_failed" - Could not automatically log in the user
+    
     
   }
 }
@@ -71,10 +72,15 @@ function signinCallback(authResult) {
    * Display the user's basic profile information from the profile object.
    */
   function displayProfile(profile){
-  	console.log("name:" + profile['displayName']);
-  	console.log("email: "+ email);
+  	// console.log("name:" + profile['displayName']);
+  	// console.log("email: "+ email);
   	userName = profile['displayName'];
   	userID = email;
+  	GplusLoggedin = true;
+  	loginSuccessFul();
+    	
+  	
+  	checkIfUserInDB(userID);
   	
   	// console.log();
   	

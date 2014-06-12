@@ -1,33 +1,50 @@
 application: footballwcquizup
 version: 1
-runtime: python
+runtime: python27
+threadsafe: true
 api_version: 1
 
 handlers:
-  - url: /(.*\.(gif|png|jpg|ico|js|css|swf|xml))
-    static_files: \1
-    upload: (.*\.(gif|png|jpg|ico|js|css|swf|xml))
+- url: /(.*\.(gif|png|jpg|ico|js|css|swf|xml))
+  static_files: \1
+  upload: (.*\.(gif|png|jpg|ico|js|css|swf|xml))
 
-	
-  - url: /addquestion
-    static_files: \1
-    upload: addQuestions.html
-	
-  - url: /main
-    static_files: \1
-    upload: index.html
-    
-  - url: /webcontent
-    static_dir: webcontent
-	
-  - url: /js
-	static_dir: webcontent/js/
-	
-  - url: /css
-	static_dir: webcontent/css/
-	
-  - url: /images
-	static_dir: webcontent/images/
-	
-  - url: /.*
-    script: helloworld.py
+- url: /addquestion
+  static_files: webcontent/addQuestions.html
+  upload: webcontent/
+
+
+- url: /football-world-cup-2014
+  static_files: webcontent/index2.html
+  upload: webcontent/
+  
+- url: /privacy
+  static_files: webcontent/privacypolicy.html
+  upload: webcontent/
+
+- url: /fixtures
+  static_files: webcontent/fixtures.html
+  upload: webcontent/
+
+  
+- url: /terms
+  static_files: webcontent/termsnconditions.html
+  upload: webcontent/
+  
+- url: /webcontent
+  static_dir: webcontent
+
+- url: /js
+  static_dir: webcontent/js/
+
+- url: /css
+  static_dir: webcontent/css/
+
+- url: /images
+  static_dir: webcontent/images/
+
+- url: /fonts
+  static_dir: webcontent/fonts/
+
+- url: /.*
+  script: helloworld.application

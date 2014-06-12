@@ -1,0 +1,701 @@
+@media (max-width: 800px){
+	body{
+		font-size: 80%!important;
+		
+	}
+	
+    .gameIframe{
+  	display: none!important;
+  }
+	
+}
+@media (max-width: 800px){
+  
+	
+}
+
+
+
+@font-face
+{
+font-family: quattroCentoSans;
+src: url('/webcontent/fonts/QuattrocentoSans-Regular.ttf');
+}
+
+
+@font-face
+{
+font-family: champnlim;
+src: url('/webcontent/fonts/CHAMPAGNE_LIMOUSINES.ttf');
+}
+@font-face
+{
+font-family: montserratreg;
+src: url('/webcontent/fonts/Montserrat-Regular.ttf');
+}
+
+body {
+	font-family: montserratreg;
+	background: url('/webcontent/images/bg.png') no-repeat center top;
+	background-attachment:fixed;
+	background-size: 100%;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-ms-background-size: 100%;
+	
+	color: #fff;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+
+.filler{
+	min-height:  1px!important;
+	height: 2px!important;
+}
+
+
+.logo{
+	letter-spacing: 1px;
+	font-size: 200%;
+	color: #5DB3BE;
+	
+	
+	
+}
+.main-page{
+	float: left;
+}
+
+.box{
+	border: 1px solid #fff;
+	border-radius: 1px;
+	margin-top: 20px;
+	float: left;
+}
+
+.cupimg{
+	position: absolute;
+	top: 0px;
+left: 16px;
+}
+
+
+.page-header{
+	margin: 0!important;
+	padding: 0!important;
+	border-bottom: 2px solid #f1fe00;
+	position: fixed;
+top: 0;
+z-index: 10000;
+background-color: #000;
+}
+.yellowtext{
+	color: #f1fe00;
+}
+.whitetext{
+	color: #fff;
+}
+.header-container{
+	 	background-color: #000;
+	 	min-height: 60px!important;
+	 	background: rgba(0, 0, 0, 0.7);
+	 	 
+}
+.right-menu ul{
+	float: right;
+	margin: 0!important;
+	margin-top: 16px!important;
+}
+.right-menu ul li{
+	list-style: none;
+	width: 29%;
+	float:left;
+	line-height: 2;
+	letter-spacing: 1px;
+	margin-left: 0!important;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: champnlim;
+	font-size: 18px;
+}
+.right-menu ul li a{
+	color: #fff;
+	font-size: 18px;
+	
+}
+.right-menu ul li a:hover{
+	text-decoration: none;
+	
+}
+
+.col2{
+	margin-left: 0!important;
+}
+.contest-name{
+	font-size: 150%;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 0px 2%;
+	margin-left: 0!important;
+	line-height: 2;
+	font-family: montserratreg;
+	font-weight: bold;
+}
+.contest-name span{
+	/*padding: 4px 10px;*/
+	
+	display: inline-block;
+	
+}
+.question-field,.previousquestion-field{
+	float: left;
+	
+	padding:15px 0%;
+}
+.rightcolumn{
+float: left!important;
+border: 1px solid;
+padding: 1%;
+margin-top: 20px;
+
+}
+.question-box{
+	padding: 0 20px;
+	display: none;
+}
+.question{
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-family: montserratreg;
+	padding: 0 12px 12px 0;
+}
+
+.options{
+	width: 50%;
+	float: left;
+}
+
+
+.options input{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.options span{
+	display: inline-block;
+	font-size: 110%;
+	color: #fff;
+}
+.options > div{
+	height: 30px;
+}
+.timer{
+	float: left;
+	text-align: center;
+}
+.next-q-msg{
+	text-align: left;
+font-size: 24px;
+line-height: 2;
+padding-left: 15px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+.login-page,.answeredmsg,.thankyoumsg,.confirmanswer,.stopGameMsg{
+	width: 60%;
+position: fixed;
+top: 20%;
+left: 18%;
+
+	background-color: #c2ce02;
+	border: 2px solid #ddd;
+	
+	padding: 2%;
+	z-index: 2;
+	display: none;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 1.5;
+	color: #222;
+	font-size: 130%;
+	z-index: 10001;
+}
+.bg-mask{
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	z-index: 1;
+	background-color: #aaa;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 10000;
+}
+.login-heading{
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-family: montserratreg;
+	padding: 1% 2% 4%;
+	float: left;
+	
+	text-align: center;
+}
+.signout{
+	display: none;
+}
+
+.fact-field,.notime-field,.prevquestion-field{
+	
+	/*border-radius: 4px;*/
+	position: relative;
+    font-family: montserratreg;
+	line-height: 1.2;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.fact-field .the-fact{
+	float: left;
+     padding: 1%;
+}
+.yesorno{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.yes,.no{
+	padding: 0px 8px;
+	border-radius: 1px;
+	color: #222;
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+}
+.yes{
+	background-color: #32CD32;
+	margin-left: 5px;
+}
+.no{
+	background-color: #DF0101;
+	margin-right: 5px;
+}
+.prevquestion-field{
+	text-align: center;
+}
+
+.whatsitpage p{
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	  font-family: montserratreg;
+	  letter-spacing: 3px;
+	  text-transform: uppercase;
+	
+}
+.whatsitpage {
+	width: 60%;
+position: absolute;
+top: 10%;
+left: 18%;
+	background-color: #D5D5CF;
+	border: 2px solid;
+	
+	padding: 2%;
+	
+	display: none;
+	border-radius: 5px;
+	line-height: 1.6;
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: #000;
+	z-index: 10001;
+}
+.fbbtnholder{
+	position: relative;
+	top: -3px;
+	margin: auto;
+    width: 135px;
+}
+.gplusloginbtnholder{
+	margin: auto;
+    width: 80px;
+}
+.gate1{
+	position: relative;
+	top: -2px;
+	
+}
+.gate2{
+	position: relative;
+	top: -12px;
+}
+
+.popupwrapper{
+	position: relative;
+}
+
+.closebtn,.fixturesclose{
+	width: 100%;
+	position: absolute;
+	text-align: right;
+	font-size: 15px;
+	top: -15px;
+	right: -15px;
+	
+}
+.fixturespage{
+	position: relative;
+}
+
+.fixturesclose{
+	top: 15px;
+	
+}
+.closebtn span,.fixturesclose span{
+	padding: 2px 7px;
+	background-color: #000;
+	font-weight: bold;
+	border-radius: 50%;
+	color: #D5D5CF;
+	display: inline-block;
+	border: 1px solid;
+	line-height: 21px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.sponsor{
+	
+	height: 90px;
+	/*background-color: #666;*/
+	color: #fff;
+	margin-bottom: 10px;
+}
+.heading-text{
+	text-align: center;
+	font-size: 140%;
+}
+.sponsor img{
+	width: 285px;
+	height: 100px;
+}
+
+.mainsponsor img{
+	height: 90px;
+	width: 728px;
+}
+
+.timeTo{
+	float: left;
+	height: 33px;
+	text-align: left;
+margin-top: 8px;
+}
+
+.popupwrapper p{
+	text-align: center;
+}
+
+.notime-field{
+	text-align: center;
+	
+	letter-spacing: 1px;
+font-size: 20px;
+}
+
+
+.fb-likebtn{
+	float: left;
+width: 135px;
+height: 20px;
+margin-top: 15px;
+}
+.twitter-follow-button{
+	float: right;
+	margin-top: 15px;
+}
+.text-holder{
+	width: 80%;
+	margin: auto;
+	padding: 3%;
+	line-height: 2;
+font-size: 120%;
+letter-spacing: 1px;
+}
+.footer{
+	margin-bottom: 40px;
+}
+.page-body{
+	margin-top: 60px;
+}
+.footerbody{
+	text-align: center;
+	margin: 25px 0;
+}
+.footerbody ul{
+	margin: auto;
+padding: 0;
+width: 33%;
+	
+}
+.footerbody ul li{
+	float: left;
+	padding: 3px 8px;
+	list-style: none;
+}
+.footerbody a{
+	color: #999;
+}
+.comingtext{
+	font-size: 150%;
+	font-weight: bold;
+	color: #0431B4;
+	
+}
+.gameIframe{
+	display: none;
+}
+.comingtext span{
+	font-size: 65%;
+	font-weight: normal;
+	color: #555555;
+}
+
+.OKbtn{
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.OKbtn span{
+	font-size: 120%;
+	background-color: #2BBB25;
+	color: #45484D;
+	border-radius: 4px;
+	padding: 1px 8px;
+	cursor: pointer; 
+}
+
+.likenfollows{
+	float: left;
+}
+.likenfollowbtns{
+	width: 33%;
+	margin: auto;
+	padding: 0 2%;
+	
+}
+.prevquestion,.prevquestionanswer,.didyouknow{
+	
+	font-size: 80%;
+	color: #fff;
+	
+}
+.prevquestion span,.prevquestionanswer span{
+	font-size: 18px;
+	
+}
+
+.adimages{
+	margin-left: 0!important;
+	margin-top: 15px;
+	text-align: left;
+}
+.adimages img{
+	width: 300px;
+	/*height: 250px;*/
+}
+.googleadbox img{
+	width: 210px;
+}
+
+
+.congratsmsg{
+	margin-top: 10px;
+	font-weight: bold;
+	font-family: montserratreg;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+.text-holder p{
+	color: #fff; 
+}
+
+.text-holder b{
+	color: #D4E610;
+}
+.schedule-table{
+	width: 80%;
+	margin: auto;
+	border: 2px solid;
+padding: 1%;
+}
+.schedule{
+	float: left;
+}
+.schedule-table td{
+	padding: 5px;
+	text-align: center;
+	line-height: 2;
+	
+}
+.schedule-table th{
+	line-height: 2;
+	font-size: 110%;
+}
+.schedule-table td.date{
+	
+	
+}
+.schedule-table td.time{
+	
+}
+.schedule-table td.team{
+	
+}
+.schedule-table td.vs{
+	
+}
+.schedule-table td.group{
+	
+}
+
+
+
+.descrpition{
+	width: 80%;
+	margin: auto;
+	
+}
+.descrpition p{
+	line-height: 1.5;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+.briefheading{
+	font-size: 150%;
+	font-weight: bold;
+	color: #D4E610;
+	line-height: 3;
+}
+
+.discussquestion{
+	margin-left: 0!important;
+padding: 0 5%;
+}
+.discussquestion p{
+font-family: champnlim;
+font-weight: bold;
+line-height: 1.2;
+letter-spacing: 1px;
+font-weight: bold;
+text-transform: uppercase;
+}
+.discussquestion span{
+	font-family: champnlim;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.discussquestion p span{
+	font-size: 60%;
+	color: #CCCCCC;
+}
+.colheading {
+	text-align: center;
+font-size: 24px;
+
+color: #fff;
+
+font-family: champnlim;
+font-weight: bold;
+letter-spacing: 4px;
+text-transform: uppercase;
+border-bottom: 2px solid;
+line-height: 35px;
+}
+.disqusbox{
+	padding: 2%;
+}
+.prevquestion-field .span12,.question-field .span12{
+	margin-left: 0!important;
+}
+.boxheading{
+	font-size: 18px;
+	font-family: montserratreg;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.shrareviewheading{
+	font-size: 24px;
+	font-family: montserratreg;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: left;
+}
+.discussquestiontopic{
+	font-size: 18px;
+	font-family: montserratreg;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-align: left;
+	margin-left: 0!important;
+}
+.scrollablebox{
+	height: 600px;
+	margin-top: 10px;
+float: left;
+}
+.playercountry{
+	font-family: champnlim;
+	font-size: 12px;
+	text-align: center;
+}
+
+.articleheading{
+	font-size: 22px;
+	font-family: montserratreg;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: left;
+	padding: 2%;
+}
+.articlebody{
+	font-size: 16px;
+	font-family: montserratreg;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-align: left;
+	margin-left: 0!important;
+padding: 2%;
+}
+.author{
+	font-size: 22px;
+	font-family: montserratreg;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: right;
+	padding: 2%;
+	color: #fff;
+}

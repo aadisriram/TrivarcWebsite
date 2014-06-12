@@ -6,15 +6,35 @@
 	.logo{
 		text-align: center;
 	}
-
+    .gameIframe{
+  	display: none!important;
+  }
+	
+}
+@media (max-width: 800px){
+  
 	
 }
 
 
+@font-face
+{
+font-family: quattroCentoSans;
+src: url('/webcontent/fonts/QuattrocentoSans-Regular.ttf');
+}
+
 
 body {
-font-family: ubuntu;
+	font-family: quattroCentoSans;
+	background: url('/webcontent/images/bg.png') no-repeat center top;
+	background-size: 100%;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	-ms-background-size: 100%;
 }
+
+
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -23,13 +43,18 @@ font-family: ubuntu;
 	line-height: 0;
 	height: 0;
 }
+
 * html .clearfix {
 	height: 1%;
 }
+
+
 .filler{
 	min-height:  1px!important;
 	height: 2px!important;
 }
+
+
 .logo{
 	letter-spacing: 1px;
 	font-size: 200%;
@@ -66,29 +91,31 @@ font-family: ubuntu;
 	font-size: 150%;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 15px 2%;
+	padding: 0px 2%;
 	margin-left: 0!important;
 }
 .contest-name span{
 	padding: 4px 10px;
 	background-color: #2BBB25;
+	display: inline-block;
+	margin-top: 15px;
 }
 .question-field{
 	float: left;
 	width: 96%;
 	padding:15px 2%;
-	
 }
 
 .question-box{
 	padding: 20px;
 	border: 1px solid #cfcfcf;
-	
+	border-radius: 4px;
+	display: none;
 }
 .question{
 	letter-spacing: 1px;
 	font-size: 120%;
-	color: brown;
+	color: #A52A2A;
 	padding: 0 12px 12px 12px;
 	
 }
@@ -118,11 +145,11 @@ font-family: ubuntu;
 	font-size: 110%;
 	line-height: 2;
 }
-.login-page{
+.login-page,.answeredmsg,.thankyoumsg,.confirmanswer,.stopGameMsg{
 	width: 80%;
-	position: absolute;
-	top: 1%;
-	left: 10%;
+	position: fixed;
+	top: 20%;
+	left: 8%;
 	background-color: #fdfdfd;
 	border: 2px solid;
 	box-shadow: 3px 3px 10px #ccc;
@@ -130,17 +157,19 @@ font-family: ubuntu;
 	z-index: 2;
 	display: none;
 	border-radius: 5px;
+	text-align: center;
+	line-height: 1.5;
 }
 .bg-mask{
 	width: 100%;
-height: 100%;
-opacity: 0.5;
-z-index: 1;
-background-color: #aaa;
-position: fixed;
-top: 0;
-left: 0;
-display: none;
+	height: 100%;
+	opacity: 0.5;
+	z-index: 1;
+	background-color: #aaa;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
 }
 .login-heading{
 	font-size: 150%;
@@ -154,16 +183,42 @@ display: none;
 	display: none;
 }
 
-.fact-field{
+.fact-field,.notime-field,.prevquestion-field{
+	border: 1px solid #cfcfcf;
+	border-radius: 4px;
 	padding: 2%;
 	line-height: 1.2;
 	font-size: 120%;
-	background-color: #fafafa;
 	color: #45484D;
+}
+.yesorno{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	margin-top: 15px;
+	
+}
+.yes,.no{
+	padding: 2px 8px;
+	border-radius: 3px;
+	color: #222;
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-block;
+}
+.yes{
+	background-color: #32CD32;
+	margin-left: 5px;
+}
+.no{
+	background-color: #DF0101;
+	margin-right: 5px;
+}
+.prevquestion-field{
+	text-align: center;
 }
 .fact-field .the-fact{
 	color: #333333;
-    
 }
 .whatsitpage p{
 	text-align: left;
@@ -174,8 +229,8 @@ display: none;
 .whatsitpage {
 	width: 80%;
 	position: absolute;
-	top: 1%;
-	left: 10%;
+	top: 10%;
+	left: 8%;
 	background-color: #fdfdfd;
 	border: 2px solid;
 	box-shadow: 3px 3px 10px #ccc;
@@ -183,11 +238,21 @@ display: none;
 	z-index: 2;
 	display: none;
 	border-radius: 5px;
+	line-height: 1.6;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #444;
+	
 }
 .fbbtnholder{
-	float: right;
 	position: relative;
 	top: 7px;
+	margin: auto;
+    width: 135px;
+}
+.gplusloginbtnholder{
+	margin: auto;
+    width: 80px;
 }
 .gate1{
 	position: relative;
@@ -197,4 +262,145 @@ display: none;
 .gate2{
 	position: relative;
 	top: -12px;
+}
+
+.popupwrapper{
+	position: relative;
+}
+
+.closebtn{
+	width: 100%;
+	position: absolute;
+	text-align: right;
+	font-size: 15px;
+	top: -23px;
+	right: -23px;
+}
+.closebtn span{
+	padding: 2px 7px;
+	background-color: #fff;
+	font-weight: bold;
+	border-radius: 50%;
+	color: #555;
+	display: inline-block;
+	border: 1px solid;
+	line-height: 21px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.sponsor{
+	height: 200px;
+	background-color: #666;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.heading-text{
+	text-align: center;
+	font-size: 140%;
+}
+.sponsor img{
+	width: 285px;
+	height: 200px;
+}
+
+.mainsponsor img{
+	height: 200px;
+	width: 100%;
+}
+.timeTo{
+	float: left;
+	height: 33px;
+}
+.popupwrapper p{
+	text-align: center;
+}
+.notime-field{
+	text-align: center;
+}
+
+.fb-likebtn{
+	float: left;
+width: 135px;
+height: 20px;
+margin-top: 15px;
+}
+.twitter-follow-button{
+	float: right;
+	margin-top: 15px;
+}
+.text-holder{
+	width: 80%;
+	margin: auto;
+	padding: 3%;
+	line-height: 2;
+font-size: 120%;
+letter-spacing: 1px;
+}
+.footer{
+	margin-bottom: 40px;
+}
+
+.footerbody{
+	text-align: center;
+}
+.footerbody ul{
+	margin: auto;
+padding: 0;
+width: 29.5%;
+	
+}
+.footerbody ul li{
+	float: left;
+	padding: 3px 8px;
+	list-style: none;
+}
+.footerbody a{
+	color: #999;
+}
+.comingtext{
+	font-size: 150%;
+	font-weight: bold;
+	color: #0431B4;
+	
+}
+.gameIframe{
+	display: none;
+}
+.comingtext span{
+	font-size: 65%;
+	font-weight: normal;
+	color: #555555;
+}
+
+.OKbtn{
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.OKbtn span{
+	font-size: 120%;
+	background-color: #2BBB25;
+	color: #45484D;
+	border-radius: 4px;
+	padding: 1px 8px;
+	cursor: pointer; 
+}
+
+.likenfollows{
+	float: left;
+}
+.likenfollowbtns{
+	width: 23%;
+	margin: auto;
+	
+}
+.prevquestion,.prevquestionanswer,.didyouknow{
+	
+	font-size: 80%;
+	
+}
+.prevquestion span,.prevquestionanswer span{
+	font-size: 150%;
 }

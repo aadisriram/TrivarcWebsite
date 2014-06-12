@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+	                                                                              
+	
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Football World Cup'14 Quiz Contest - Trivarc</title>
+		<meta name="description" content="">
+		<meta name="author" content="Kiran">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="../webcontent/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../webcontent/css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="../webcontent/css/timeTo.css" />
+		<link rel="stylesheet" href="../webcontent/css/main2.css" />
+
+		<meta property="og:title" content="Football World Cup Quiz by TrivArc" />
+		<meta property="og:type" content="Website" />
+		<meta property="og:url" content="http://www.trivarc.com/main" />
+		<meta property="og:image" content="http://www.trivarc.com/webcontent/images/trivarc.png" />
+		<meta property="og:description" content="TrivArc is an online quiz contest where the football fanatics can test their knowledge in football and win Exciting prizes." />
+		<meta property="fb:app_id" content="685257758176483" />
+		<meta property="fb:admins" content="1646273830" />
+		<meta property="og:site_name" content="Football World Cup Quiz by TrivArc" />
+	    
+        
+   
+ 
+		
+		
+		
+	</head>
+
+	<body>
+		<div class="whatsitpage">
+			<div class="popupwrapper">
+				<div class="closebtn">
+					<span>x</span>
+				</div>
+				<p>
+					Brief Intro
+				</p>
+				TrivArc(Trivia Arcade) is an online quiz contest where the football fanatics can test their knowledge in football. Participants get a chance to win exciting prizes every day.
+				<p>
+					How it works
+				</p>
+				A new question appears every hour of the day(From 9am - 11pm IST). Participant answering the maximum questions correctly in a day in minimum time is declared Winner for the Day and wins exciting prizes. Participants must login using given option so that they can be contacted in case they win prizes.
+				<p>
+					Grand Finale
+				</p>
+				The various Winners for the Day get a chance to participate in a Grand Finale which will be conducted on the Final match day. The winner of this finale event wins a Bumper prize and is declared Winner of the Tournament.
+			</div>
+		</div>
+		<div class="confirmanswer">
+			<div class="popupwrapper">
+				<div class="closebtn">
+					<span>x</span>
+				</div>
+				<p>
+					Would you like to submit your answer? 
+				</p>
+				<div class="yesorno">
+					<span class="no">No</span>
+					<span class="yes">Yes</span>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="answeredmsg">
+			<div class="popupwrapper">
+				<div class="closebtn">
+					<span>x</span>
+				</div>
+				<p>
+					You have already had your shot at the goal.
+				</p>
+				<p>
+					Please wait for your next attempt
+				</p>
+
+				<p style="text-align: center;"  >
+					Thank you
+				</p>
+				<div class="OKbtn">
+					<span> OK </span>
+				</div>
+
+			</div>
+		</div>
+		<div class="thankyoumsg">
+			<div class="popupwrapper">
+				<div class="closebtn">
+					<span>x</span>
+				</div>
+				<p>
+					Thank you for the spectacular attempt on the Goal.
+				</p>
+				<p>
+					Please wait till you get to attempt your next shot.
+				</p>
+				
+				<div class="OKbtn">
+					<span> OK </span>
+				</div>
+
+			</div>
+		</div>
+		<div class="stopGameMsg">
+			<div class="popupwrapper">
+				<div class="closebtn">
+					<span>x</span>
+				</div>
+				<p>
+					Hope you are having a good time here.
+				</p>
+				<p>
+					It's time to prepare for the next question. 
+				</p>
+				<p>
+					You can continue the game after the next question.
+				</p>
+				<div class="OKbtn">
+					<span> OK </span>
+				</div>
+			</div>
+		</div>
+		<div class="login-page">
+			<div class="popupwrapper">
+				<div class="closebtn">
+					<span>x</span>
+				</div>
+				<div class="login-heading row-fluid clearfix">
+					<span>Please enter the Stadium through</span>
+				</div>
+				<div class="login-options row-fluid clearfix">
+					<div class="filler span3"></div>
+					<div class="span3 fbloginoptions login-btns clearfix">
+
+						<div class="fbbtnholder">
+							<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+						</div>
+					</div>
+					<div class="span3 gplusloginbtn clearfix login-btns">
+						<div class="gplusloginbtnholder">
+
+							<span id="signinButton"> <span class="g-signin" data-callback="signinCallback" data-clientid="816782018178-oa34ggfl5no4kmm8r8n87c9u7p16hc0g.apps.googleusercontent.com"
+								data-cookiepolicy="single_host_origin"
+								data-requestvisibleactions="http://schemas.google.com/AddActivity"
+								data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read"> </span> </span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="main-page row-fluid">
+			
+			
+			<div class="page-header row-fluid">
+				
+				<div class="header-container span12">
+					<div class="logo span2">
+						<a href="/" style="color: #5DB3BE; text-decoration: none;"><img src="../webcontent/images/trivarclogo.png" alt="TrivArc logo"/></a>
+					</div>
+					<div class="filler span6"></div>
+					<div class="right-menu span4">
+						<div class=" row-fluid">
+							<ul class="clearfix span12 topnav">
+								<li class="fixtures">
+									<a href="javascript:void(0)">Fixtures</a>
+								</li>
+								<li class="whatisthis ">
+									About TA
+								</li>
+								<li class="signup ">
+									Kick In
+								</li>
+								<li class="signout">
+									Kick Out
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-body row-fluid">
+				<div class="mainbody fixturespage span11" style="display: none">
+            	      <div class="row-fluid clearfix">
+            	      <div class="fixturesclose fixtures">
+            	      	  <span>x</span>
+            	      </div>	
+					<div class="descrpition briefheading"> Brief History about World Cup in Brazil </div>
+					<div class="descrpition ">
+						<p>
+							The FIFA Football World Cup is an international sporting event which takes place once in every four years 
+							where 32 teams battle it out for the coveted prize, the World Cup trophy.
+						</p>
+						<p>	 
+							FIFA World Cup 2014 is the 20th edition of the competition which began way back in 1930.
+						</p>
+						<p>	 
+							The 2014 edition is being hosted by Brazil, five time champions of the world. This is the second time the event is being organised in Brazil, the previous one being in 1950 in which Brazil finished runners up behind Uruguay. 
+						</p>
+						<p>
+							The final of the 1950 World Cup was held in the Maracana stadium, Rio De Janeiro in which 173,850 fans witnessed Uruguay beat the home team Brazil 2-1. 
+						</p>	
+							The recorded 173,850 attendance was the highest ever for a football match.
+						<p>	 
+							This year also the final will be held in the same Maracana stadium which underwent renovations leading up to the tournament. 
+						</p>
+						<p>	
+							Brazil have won this tournament five times, more than any other country, their most recent win being in 2002 when the tournament was held for the first time in Asia in South Korea and Japan. 
+						</p>
+					</div>
+				</div>
+				<div class="descrpition briefheading"> Group Stage Fixtures </div>
+				<div class="schedule row-fluid ">
+					<table class="schedule-table">
+						<tbody>
+							<tr style="border-bottom: 2px solid;">
+								<th>Date</th>
+								<th>Time (IST)</th>
+								<th>Team 1</th>
+								<th></th>
+								<th>Team 2</th>
+								<th>Group</th>
+							</tr>
+							<tr class="match1">
+								<td class="date">13 Jun 2014  </td>
+								<td class="time"> 1:30</td>
+								<td class="team1 team">BRAZIL</td>
+								<td class="vs">vs</td>
+								<td class="team2 team">CROATIA</td>
+								<td class="group">A</td>
+							</tr>
+							<tr class="match2">
+								<td class="date">13 Jun 2014</td>
+								<td class="time">21:30</td>
+								<td class="team1 team">MEXICO</td>
+								<td class="vs">vs</td>
+								<td class="team2 team">CAMEROON</td>
+								<td class="group">A</td>
+							</tr>
+							<tr class="match3">
+								<td class="date">14 Jun 2014</td><td class="time">00:30</td><td class="team1 team">SPAIN</td><td class="vs">vs</td><td class="team2 team">NETHERLANDS</td><td class="group">B</td>
+							</tr>
+							<tr class="match4">
+								<td class="date">14 Jun 2014</td><td class="time">03:30</td><td class="team1 team">CHILE</td><td class="vs">vs</td><td class="team2 team">AUSTRALIA</td><td class="group">B</td>
+							</tr>
+							<tr class="match5">
+								<td class="date">14 Jun 2014</td><td class="time">21:30</td><td class="team1 team">COLOMBIA</td><td class="vs">vs</td><td class="team2 team">GREECE</td><td class="group">C</td>
+							</tr>
+							
+							
+							
+							<tr class="match6">
+								<td class="date">15 Jun 2014</td><td class="time">00:30</td><td class="team1 team">ENGLAND</td><td class="vs">vs</td><td class="team2 team">ITALY</td><td class="group">D</td>
+							</tr>
+							<tr class="match7">
+								<td class="date">15 Jun 2014</td><td class="time">03:30</td><td class="team1 team">IVORY COAST</td><td class="vs">vs</td><td class="team2 team">JAPAN</td><td class="group">C</td>
+							</tr>
+							<tr class="match8">
+								<td class="date">15 Jun 2014</td><td class="time">06:30</td><td class="team1 team">URUGUAY</td><td class="vs">vs</td><td class="team2 team">COSTA RICA</td><td class="group">D</td>
+							</tr>
+							
+							
+							<tr class="match9">
+								<td class="date">15 Jun 2014</td><td class="time">21:30</td><td class="team1 team">SWITZERLAND</td><td class="vs">vs</td><td class="team2 team">ECUADOR</td><td class="group">E</td>
+							</tr>
+							
+							
+							<tr class="match10">
+								<td class="date">16 Jun 2014</td><td class="time">00:30</td><td class="team1 team">FRANCE</td><td class="vs">vs</td><td class="team2 team">HONDURAS</td><td class="group">E</td>
+							</tr>
+							<tr class="match11">
+								<td class="date">16 Jun 2014</td><td class="time">03:30</td><td class="team1 team">ARGENTINA</td><td class="vs">vs</td><td class="team2 team">BOSNIA-HERZEGOVINA</td><td class="group">F</td>
+							</tr>
+							<tr class="match12">
+								<td class="date">16 Jun 2014</td><td class="time">21:30</td><td class="team1 team">GERMANY</td><td class="vs">vs</td><td class="team2 team">PORTUGAL</td><td class="group">G</td>
+							</tr>
+							
+							
+							<tr class="match13">
+								<td class="date">17 Jun 2014</td><td class="time">00:30</td><td class="team1 team">IRAN</td><td class="vs">vs</td><td class="team2 team">NIGERIA</td><td class="group">F</td>
+							</tr>
+							<tr class="match14">
+								<td class="date">17 Jun 2014</td><td class="time">03:30</td><td class="team1 team">GHANA</td><td class="vs">vs</td><td class="team2 team">UNITED STATES</td><td class="group">G</td>
+							</tr>
+							<tr class="match15">
+								<td class="date">17 Jun 2014</td><td class="time">21:30</td><td class="team1 team">BELGIUM</td><td class="vs">vs</td><td class="team2 team">ALGERIA</td><td class="group">H</td>
+							</tr>
+							
+							<tr class="match16">
+								<td class="date">18 Jun 2014</td><td class="time">00:30</td><td class="team1 team">BRAZIL</td><td class="vs">vs</td><td class="team2 team">MEXICO</td><td class="group">A</td>
+							</tr>
+							<tr class="match17">
+								<td class="date">18 Jun 2014</td><td class="time">03:30</td><td class="team1 team">RUSSIA</td><td class="vs">vs</td><td class="team2 team">SOUTH KOREA</td><td class="group">H</td>
+							</tr>
+							<tr class="match18">
+								<td class="date">18 Jun 2014</td><td class="time">21:30</td><td class="team1 team">AUSTRALIA</td><td class="vs">vs</td><td class="team2 team">NETHERLANDS</td><td class="group">B</td>
+							</tr>
+							
+							
+							<tr class="match19">
+								<td class="date">19 Jun 2014</td><td class="time">00:30</td><td class="team1 team">SPAIN</td><td class="vs">vs</td><td class="team2 team">CHILE</td><td class="group">B</td>
+							</tr>
+							<tr class="match20">
+								<td class="date">19 Jun 2014</td><td class="time">03:30</td><td class="team1 team">CAMEROON</td><td class="vs">vs</td><td class="team2 team">CROATIA</td><td class="group">A</td>
+							</tr>
+							<tr class="match21">
+								<td class="date">19 Jun 2014</td><td class="time">21:30</td><td class="team1 team">COLOMBIA</td><td class="vs">vs</td><td class="team2 team">IVORY COAST</td><td class="group">C</td>
+							</tr>
+							
+							
+							<tr class="match22">
+								<td class="date">20 Jun 2014</td><td class="time">00:30</td><td class="team1 team">URUGUAY</td><td class="vs">vs</td><td class="team2 team">ENGLAND</td><td class="group">D</td>
+							</tr>
+							<tr class="match23">
+								<td class="date">20 Jun 2014</td><td class="time">03:30</td><td class="team1 team">JAPAN</td><td class="vs">vs</td><td class="team2 team">GREECE</td><td class="group">C</td>
+							</tr>
+							<tr class="match24">
+								<td class="date">20 Jun 2014</td><td class="time">21:30</td><td class="team1 team">ITALY</td><td class="vs">vs</td><td class="team2 team">COSTA RICA</td><td class="group">D</td>
+							</tr>
+							
+							
+							<tr class="match25">
+								<td class="date">21 Jun 2014</td><td class="time">00:30</td><td class="team1 team">SWITZERLAND</td><td class="vs">vs</td><td class="team2 team">FRANCE</td><td class="group">E</td>
+							</tr>
+							<tr class="match26">
+								<td class="date">21 Jun 2014</td><td class="time">03:30</td><td class="team1 team">HONDURAS</td><td class="vs">vs</td><td class="team2 team">ECUADOR</td><td class="group">E</td>
+							</tr>
+							<tr class="match27">
+								<td class="date">21 Jun 2014</td><td class="time">21:30</td><td class="team1 team">ARGENTINA</td><td class="vs">vs</td><td class="team2 team">IRAN</td><td class="group">F</td>
+							</tr>
+							
+							
+							<tr class="match28">
+								<td class="date">22 Jun 2014</td><td class="time">00:30</td><td class="team1 team">GERMANY</td><td class="vs">vs</td><td class="team2 team">GHANA</td><td class="group">G</td>
+							</tr>
+							<tr class="match29">
+								<td class="date">22 Jun 2014</td><td class="time">03:30</td><td class="team1 team">NIGERIA</td><td class="vs">vs</td><td class="team2 team">BOSNIA-HERZEGOVINA</td><td class="group">F</td>
+							</tr>
+							<tr class="match30">
+								<td class="date">22 Jun 2014</td><td class="time">21:30</td><td class="team1 team">BELGIUM</td><td class="vs">vs</td><td class="team2 team">RUSSIA</td><td class="group">H</td>
+							</tr>
+							
+							
+							<tr class="match31">
+								<td class="date">23 Jun 2014</td><td class="time">00:30</td><td class="team1 team">SOUTH KOREA</td><td class="vs">vs</td><td class="team2 team">ALGERIA</td><td class="group">H</td>
+							</tr>
+							<tr class="match32">
+								<td class="date">23 Jun 2014</td><td class="time">03:30</td><td class="team1 team">UNITED STATES</td><td class="vs">vs</td><td class="team2 team">PORTUGAL</td><td class="group">G</td>
+							</tr>
+							<tr class="match33">
+								<td class="date">23 Jun 2014</td><td class="time">21:30</td><td class="team1 team">AUSTRALIA</td><td class="vs">vs</td><td class="team2 team">SPAIN</td><td class="group">B</td>
+							</tr>
+							<tr class="match34">
+								<td class="date">23 Jun 2014</td><td class="time">21:30</td><td class="team1 team">NETHERLANDS</td><td class="vs">vs</td><td class="team2 team">CHILE</td><td class="group">B</td>
+							</tr>
+							
+							
+							<tr class="match35">
+								<td class="date">24 Jun 2014</td><td class="time">01:30</td><td class="team1 team">CROATIA</td><td class="vs">vs</td><td class="team2 team">MEXICO</td><td class="group">A</td>
+							</tr>
+							<tr class="match36">
+								<td class="date">24 Jun 2014</td><td class="time">01:30</td><td class="team1 team">CAMEROON</td><td class="vs">vs</td><td class="team2 team">BRAZIL</td><td class="group">A</td>
+							</tr>
+							<tr class="match37">
+								<td class="date">24 Jun 2014</td><td class="time">21:30</td><td class="team1 team">ITALY</td><td class="vs">vs</td><td class="team2 team">URUGUAY</td><td class="group">D</td>
+							</tr>
+							<tr class="match38">
+								<td class="date">24 Jun 2014</td><td class="time">21:30</td><td class="team1 team">COSTA RICA</td><td class="vs">vs</td><td class="team2 team">ENGLAND</td><td class="group">D</td>
+							</tr>
+							
+							
+							<tr class="match39">
+								<td class="date">25 Jun 2014</td><td class="time">01:30</td><td class="team1 team">JAPAN</td><td class="vs">vs</td><td class="team2 team">COLOMBIA</td><td class="group">C</td>
+							</tr>
+							<tr class="match40">
+								<td class="date">25 Jun 2014</td><td class="time">01:30</td><td class="team1 team">GREECE</td><td class="vs">vs</td><td class="team2 team">IVORY COAST</td><td class="group">C</td>
+							</tr>
+							<tr class="match41">
+								<td class="date">25 Jun 2014</td><td class="time">21:30</td><td class="team1 team">NIGERIA</td><td class="vs">vs</td><td class="team2 team">ARGENTINA</td><td class="group">F</td>
+							</tr>
+							<tr class="match42">
+								<td class="date">25 Jun 2014</td><td class="time">21:30</td><td class="team1 team">BOSNIA-HERZEGOVINA</td><td class="vs">vs</td><td class="team2 team">IRAN</td><td class="group">F</td>
+							</tr>
+							
+							
+							
+							
+							<tr class="match43">
+								<td class="date">26 Jun 2014</td><td class="time">01:30</td><td class="team1 team">HONDURAS</td><td class="vs">vs</td><td class="team2 team">SWITZERLAND</td><td class="group">E</td>
+							</tr>
+							<tr class="match44">
+								<td class="date">26 Jun 2014</td><td class="time">01:30</td><td class="team1 team">ECUADOR</td><td class="vs">vs</td><td class="team2 team">FRANCE</td><td class="group">E</td>
+							</tr>
+							<tr class="match45">
+								<td class="date">26 Jun 2014</td><td class="time">21:30</td><td class="team1 team">UNITED STATES</td><td class="vs">vs</td><td class="team2 team">GERMANY</td><td class="group">G</td>
+							</tr>
+							<tr class="match46">
+								<td class="date">26 Jun 2014</td><td class="time">21:30</td><td class="team1 team">PORTUGAL</td><td class="vs">vs</td><td class="team2 team">GHANA</td><td class="group">G</td>
+							</tr>
+							
+							
+							<tr class="match47">
+								<td class="date">27 Jun 2014</td><td class="time">01:30</td><td class="team1 team">SOUTH KOREA</td><td class="vs">vs</td><td class="team2 team">BELGIUM</td><td class="group">H</td>
+							</tr>
+							<tr class="match48">
+								<td class="date">27 Jun 2014</td><td class="time">01:30</td><td class="team1 team">ALGERIA</td><td class="vs">vs</td><td class="team2 team">RUSSIA</td><td class="group">H</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+                </div> 	
+				
+				
+				<div class="mainbody triviapage span11">
+				<div class="filler span1"></div>	
+                <div class="span8 col2">
+				<div id="status">
+
+				</div>
+				<!-- <div class="sponsors question-field clearfix">
+					<div class="filler span2"></div>
+					<div class="span10 clearfix">
+						<div class="span12 mainsponsor sponsor"><img src="../webcontent/images/topbanner.png" class="mainsponsorsimg" alt="Football worldcup balls from 1930 to 2010 " /></div>
+					</div>
+				</div> -->
+				
+				<div class="row-fluid box clearfix">
+				<!-- <div class="filler span2"></div>	 -->
+				<div class="contest-name yellowtext span7">
+					<span> Demo World Cup'14 Trivia </span>
+				</div>
+				<div class="likenfollowbtns span5 clearfix">
+					<div class="fb-likebtn">
+						<div class="fb-like" data-href="https://www.facebook.com/trivarcworldcup" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+					</div>
+					<div class="twittwerfollw">
+						<a href="https://twitter.com/TrivArc" class="twitter-follow-button" data-show-count="false">Follow @TrivArc</a>
+						<script>
+							! function(d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+								if (!d.getElementById(id)) {
+									js = d.createElement(s);
+									js.id = id;
+									js.src = p + '://platform.twitter.com/widgets.js';
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+							}(document, 'script', 'twitter-wjs');
+						</script>
+					</div>
+					</div>
+					</div>
+					<div class="timer box row-fluid">
+					<!-- <div class="filler span2"></div> -->
+					<div class="next-q-msg yellowtext span4">
+						<span>Next question in</span>
+					</div>
+					<div id="countdowntimer" class="countdowntimer span6 clearfix"></div>
+					
+				</div>
+				<!-- <div class="row-fluid likenfollows">
+				</div> -->
+				<div class="question-field box row-fluid">
+					<!-- <div class="filler span2"></div> -->
+					<div class="span12 clearfix question-box" style="display: none">
+						<div class="span12 yellowtext boxheading">Question of the hour</div>
+						<div class="question whitetext span12">
+							<span> What was the final score in world cup 2010 final match?? </span>
+						</div>
+						<div class="options-box span12 clearfix">
+							<div class="optionsAC span6 options">
+								<div class="optionA">
+									<input type="radio" name="option" class="option" value="a"/>
+									<span>A. </span><span class="opta">3 - 1 </span>
+								</div>
+
+								<div class="optionB">
+									<input type="radio" name="option" class="option" value="b"/>
+									<span>B. </span><span class="optb">6 - 5 </span>
+								</div>
+							</div>
+							<div class="optionsBD span6 options">
+								<div class="optionC">
+									<input type="radio" name="option" class="option" value="c"/>
+									<span>C. </span><span class="optc">2 - 1 </span>
+								</div>
+								<div class="optionD">
+									<input type="radio" name="option" class="option" value="d"/>
+									<span>D. </span><span class="optd">4 - 3 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span12 fact-field clearfix" style="display: none">
+						<div class="span12 boxheading yellowtext">Did you know ?</div>
+						<div class="the-fact whitetext"> Football world cup is the highly popular event in the world </div>
+					</div>
+					<div class="span12 notime-field clearfix" style="display: none">
+                        <img src="../webcontent/images/cup.png" class="cupimg" /> 
+						<span class="the-fact whitetext"> Questions will appear between 9am &amp; 11pm </span>
+					</div>
+
+				</div>
+				<div class="previousquestion-field box row-fluid" style="display: none">
+					
+					<div class="span12 prevquestion-field clearfix" >
+                        <div class="span12 boxheading yellowtext">Previous question</div>
+						<div class="the-fact whitetext prevquestion span12">
+							 <span> Could't Fetch it :( </span>
+						</div>
+						<div class="span12 boxheading yellowtext">Answer</div>
+						<div class="the-fact whitetext prevquestionanswer span12">
+							 <span> NA </span>
+						</div>
+						<div class="span12 congratsmsg yellowtext">
+							Congratulations if it was a GOAL !!
+						</div>
+					</div>
+
+				</div>
+				<div class="article row-fluid box">
+					<div class="span12 articleheading yellowtext">Brazil's last affair with hosting the World Cup</div>
+					<div class="span12 articlebody">
+						
+						Brazilians love their Samba. They love it to the extent that it can be seen in the style of football they play. Right from Pele, then Zico to Ronaldinho, we have seen so many Brazilian stars dancing their way around opponent defenders as if doing a samba. They call it the Brazilian way, artistes of the highest quality.
+						<br />
+						<br />
+						The World Cup 2014 is arriving to Brazil for the second time in history, after 64 years. The previous edition that was held in Brazil was way back in 1950. The Brazilian players of the time, rich in skill and artistry, terrorized defenders scoring as many goals to reach the final in front of the home fans. The final was to be held in the Maracana stadium, Rio De Janeiro, the same Maracana stadium which will host the final of 2014. The wily Brazilians were set to meet Uruguay, who had scrapped through to the final, drawing 2-2 with Spain and only just winning 3-2 against Sweden.
+						<br />
+						<br />
+						Few days before the game, the Brazilian press declared Brazil as Champions. There was a general consensus among the public that Brazil were set for a landslide victory. That morning, the streets of Rio were bustling with activity. Brazilian supporters gathered for an improvised carnival organised to celebrate the crowning champions.
+						<br />
+						<br />
+						Brazil lined up in their all white uniform along with Uruguay before kick-off. Rumour has it that during the Brazilian national anthem, a Uruguayan player urinated, intimidated by the reverberations made by the Brazilian supporters. 173,850 fans (the highest ever attendance recorded for a sports match) were packed inside the Maracana to see the crowning glory of their dear team. But Uruguayan captain, Obdulio Varela had other ideas.
+						<br />
+						<br />
+						The Brazilian newspaper O Mundo printed an early edition on the day of the final containing a photograph of Brazil with the caption "These are the world champions". Obdulio Varela bought as many copies as he could, laid them on his bathroom floor and encouraged his teammates to urinate on them. Moments before the game, the Uruguayan coach Juan López informed his team that their best chance of surviving the powerful offensive line of Brazil would come through adopting a defensive strategy. After he left, Varela stood up and addressed the team himself, saying, "Juancito is a good man, but today, he is wrong. If we play defensively against Brazil, our fate will be no different from Spain or Sweden". He gave an emotional speech inspiring his team mates, encouraging them not to be intimidated by the opposition and the fans.
+						<br />
+						<br />
+						The game began as expected, Brazil, with their fluid, free flowing attack which Uruguay somehow coped in the first half and the score was goalless. But right after the interval, Brazil scored just two minutes into the second half. The crowd went berserk. Obdulio Varela questioned the legitimacy of the goal intentionally, in such a manner that the English referee had to bring out an interpreter. During this argument the crowd cooled down. Varela took the ball and placed it at the centre, and shouted to his team in a macho style, "Now, its time we win".
+						<br />
+						<br />
+						Uruguayans were able to take control of the game and Schiaffino scored in the 66th minute. Then just 11 minutes from time, Alcides Ghiggia came running from the right flank and scored Uruguay's second goal. The crowd was dumbfounded. The Maracana sounded completely empty, even with the near 200,000 people inside it. Brazilian players were stunned. They had gotten so carried away that they never prepared a Plan B for when they trailed. Brazilian players had forgotten their skills and tricks.
+						<br />
+						<br />
+						The referee blew the final whistle, and Brazil had lost. The Brazilian government had already made arrangements, in advance for the presentation ceremony for Brazil. Gold medals with Brazilian player names were made, at a time when FIFA did not hand out medals to teams. Now that Uruguay had won, there was no ceremony prepared. Amidst the morbid silence, the FIFA President Jules Rimmet who was left all alone with the trophy, found Varela and handed it out to him on the pitch. The crowd stood in disbelief, they were stripped off the title they had already considered rightfully theirs.
+						<br />
+						<br />
+						The aftermath of this match was so devastating that Brazil changed their kit colour from all white to the colours of their flag, as they considered it to be a bad omen. Several players silently walked into retirement, while others were forced out of the side. They say the pain and anguish of the 200,000 odd supporters can be felt in the empty Maracana stadium even to this day.
+						<br />
+						
+					</div>
+				</div>
+
+				<!-- <div class="sponsors question-field clearfix">
+					<div class="filler span2"></div>
+					<div class="span10 clearfix">
+						<div class="span12 mainsponsor sponsor"><img src="../webcontent/images/bottombanner.png" class="mainsponsorsimg" alt="Football worldcup balls from 1930 to 2010 " /></div>
+					</div>
+				</div> -->
+				<div class="sponsors box row-fluid clearfix">
+					
+					<div class="span12 disqusbox clearfix">
+						<div class="span12 whitetext shrareviewheading"><p> Share your views on </p></div>
+						<div class="span12 discussquestiontopic">
+						    <span>Now that Frank Ribery has been ruled out through injury, will Didier Deschamps' decision of omitting Samir Nasri from the French squad hit back up on them? </span>
+						 </div>
+						
+						<div id="disqus_thread"></div>
+						    <script type="text/javascript">
+						        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+						        var disqus_shortname = 'trivarcforsports'; // required: replace example with your forum shortname
+						
+						        /* * * DON'T EDIT BELOW THIS LINE * * */
+						        (function() {
+						            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+						            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+						        })();
+						    </script>
+						    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						    <!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
+						    
+				
+					</div>
+					
+					
+				</div>
+				
+				
+				  		
+				
+				
+				
+				
+				
+				
+				
+				<!-- <div class="sponsors question-field clearfix">
+					<div class="filler span1">
+                     
+					</div>
+					<div class="span10 clearfix">
+						<div class="span4 sponsor1 sponsor"><img src="../webcontent/images/sponsor1.png" class="cosponsorsimg" alt="sponsor1" />
+						</div>
+						<div class="span4 sponsor2 sponsor"><img src="../webcontent/images/sponsor2.png" class="cosponsorsimg" alt="sponsor2"/>
+						</div>
+						<div class="span4 sponsor3 sponsor"><img src="../webcontent/images/sponsor3.png" class="cosponsorsimg" alt="sponsor3"/>
+						</div>
+					</div>
+				</div> -->
+				
+				<!-- <div class="row-fluid gameIframe">
+					<div class="filler span2">
+					</div>
+					<div class="span10 timepassGame">
+						<iframe src="http://www.gamenet.com/game/freekickfusion/" frameborder="0" width="850" height="600" scrolling="yes"></iframe>
+					</div>
+				</div> -->
+                  
+                  
+                  
+             </div>     
+             <div class="span3 rightcolumn clearfix">
+             	
+             	<div class="span12 colheading"> Watch out for</div>
+             	
+             	<div class="row-fluid scrollablebox">
+             	<div class="span12 discussquestion">
+             		<p class="playername" style="font-size: 23px;">Cristiano Ronaldo</p>
+             		<p class="playercountry whitetext">Portugal</p>
+             		<span>
+             			Cristiano Ronaldo comes to Brazil as the best player on the planet after winning the FIFA Ballon d'or(Award given to the best player of the year in Football) for the year 2014. Ronaldo when he puts on his goalscoring shoes is unstoppable and has shattered record after record,in Style. He has scored a staggering 177 goals in 165 appearances for Real Madrid since joining the club in 2009 and 68 goals in UEFA Champions League.
+             			<br />
+             			<br /> 
+             			Unfortunatey, the previous World Cup has not been quite memorable for the Real Madrid star after Portugal crashed out of the World Cup in the first knock out stage.   
+             			<br />
+             			<br />
+             			Ronaldo certainly the best player to be watched out for, as he carries the Ballon d'or, also carries "the Ballon d'or curse",which says No player winning the Ballon d'or has won the World Cup in that Year!. Can he break the Ballon d'or tradition and win the World Cup 2014 for Portugal?Lets watch out... 
+             			<br />
+             			<br />      
+             		</span>
+             	</div>
+             	
+             	
+             	
+             	<div class="span12 discussquestion">
+             		<p class="playername" style="font-size: 40px;">Luis Suárez </p>
+             		<p class="playercountry whitetext">Uruguay</p>
+             		<span>
+             			<i>Love him or hate him,you just cannot ignore him</i>. Luis Suárez has been in the news for all the worng reasons in the past a lot. He first came to light all over the world for his famous act of saving with his hands at the goalline in the last World Cup for which he got sent off. Two biting incidents and a racism episode with Patrice Evra followed. He earned a ban of 7 matches for biting Zlatan Ibrahmovic and a 10 matches ban for biting branislav ivanovic. He was also banned for 10 matches following the racism incident.   But the previous year he has been in prolific goalscoring form for liverpool scoring 31 goals in 33 matches.
+             			<br />
+             			<br /> 
+             			A knee injury can end his dream of playing in the World Cup but both Suarez and Uruguay are optimistic about his participation. If Suarez can replicate his goalscoring form of last season for Uruguay, he can certainly be their talisman. Luis Suarez surely has a knack of grabbing the headlines, either good or bad.
+             			<br />
+             			<br />
+             			   
+             		</span>
+             	</div>
+             	</div>
+             	
+             
+             </div>
+            </div>
+            
+            
+            
+			</div>
+			<div class="row-fluid footer clearfix">
+				<div class="footerbody">
+					<ul class="clearfix">
+						<li>
+							<a href="/terms">Terms &amp; Conditions</a>
+						</li>
+						<li>
+							<a href="/privacy">Privacy Policy</a>
+						</li>
+						<li>
+							<a href="mailto:infoboard@trivarc.com">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		
+
+		<div class="bg-mask">
+
+		</div>
+		<div id="fb-root"></div>
+		<script type="text/javascript" src="../webcontent/js/scripts/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="../webcontent/js/fblogin.js"></script>
+		<script type="text/javascript" src="../webcontent/js/gpluslogin.js"></script>
+		<script type="text/javascript" src="../webcontent/js/scripts/jquery.timeTo.min.js"></script>
+		<script type="text/javascript" src="../webcontent/js/scripts/jquery.nicescroll.js"></script>
+		<script type="text/javascript" src="../webcontent/js/main2.js"></script>
+
+		<script>
+			( function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id))
+						return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=685257758176483&version=v2.0";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script type="text/javascript">
+			(function() {
+				var po = document.createElement('script');
+				po.type = 'text/javascript';
+				po.async = true;
+				po.src = 'https://apis.google.com/js/client:plusone.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(po, s);
+			})();
+		</script>
+	</body>
+
+</html>
